@@ -78,6 +78,7 @@ input.text {
 	height: 33px;
 	border-radius: 0;
 	border: 1px solid #cdcdcd;
+	padding: 0 7px;
 }
 
 label {
@@ -134,4 +135,5 @@ li.footer:first-child {
 
 li.footer:hover, li.login:hover {
 	text-decoration: underline;
+	cursor: pointer;
 }
