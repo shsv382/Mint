@@ -131,3 +131,7 @@ li.footer {
 li.footer:first-child {
 	border: none;
 }
+
+li.footer:hover, li.login:hover {
+	text-decoration: underline;
+}
