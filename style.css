@@ -113,6 +113,10 @@ button {
 	border: none;
 }
 
+button[disabled] {
+	background-color: #555;
+}
+
 ul#foot, li.footer {
 	display: inline-block;
 	padding: 0 10px;
@@ -136,4 +140,17 @@ li.footer:first-child {
 li.footer:hover, li.login:hover {
 	text-decoration: underline;
 	cursor: pointer;
+}
+
+input.validation-success {
+	box-shadow: 0 0 1.3px 1.3px #7c7;
+	border-color: #dfd;
+	background-color: #dfd;
+}
+
+input.validation-error {
+	outline-color: red;
+	box-shadow: 0 0 1.3px 1.3px #f77;
+	border-color: #fee;
+	background-color: #fee;
 }
