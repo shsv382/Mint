@@ -144,8 +144,8 @@ li.footer:hover, li.login:hover {
 
 input.validation-success {
 	box-shadow: 0 0 1.3px 1.3px #7c7;
-	border-color: #dfd;
-	background-color: #dfd;
+	border-color: #efe;
+	background-color: #efffef;
 }
 
 input.validation-error {
