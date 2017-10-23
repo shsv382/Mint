@@ -54,7 +54,7 @@ submit.disabled = true;
 function valid() {
   var addValClass = function(bool, i, msg) {    
     var span = document.createElement('span');
-    span.style.color = "red";
+    span.style.color = "#f73939";
     span.style.float = "right";
     labels[i].appendChild(span);
       if (bool) {
@@ -114,14 +114,8 @@ function valid() {
 
 
 // Блокировка кнопки submit
-  var counter = 0;
-
-  for (var i = 0; i < inputs.length; i++) {
-    if (inputs[i].valid == true) counter++;
-  }
-
-  submit.disabled = (counter == inputs.length - 1) ? false : true;
+  submit.disabled = (form.getElementsByClassName("validation-error").length < 1) ? false : true;
 
 }
 
-document.onkeyup = valid;
+form.onkeyup = form.onfocus = valid;
